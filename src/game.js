@@ -47,7 +47,7 @@ const updateScoreboard = () => {
 
   missesLabel.textContent = misses
   movesLabel.textContent = moves
-  accuracyLabel.textContent = `${isNaN(accuracy) ? 100 : accuracy}%`
+  accuracyLabel.textContent = `${isNaN(accuracy) ? 100 : accuracy.toFixed(2)}%`
 }
 
 const shuffleDeck = () => {
